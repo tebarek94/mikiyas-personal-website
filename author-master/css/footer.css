@@ -1,0 +1,157 @@
+/* Basic Footer Styles */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.footer-info__left {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-info__left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer-info__right {
+  flex: 2;
+  padding-left: 30px;
+}
+
+.footer-info__right h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-phone, .footer-info__right p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Form Styles */
+.footer-contact-form {
+  width: 25%;
+}
+
+.footer-contact-form h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contact-form__input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f76c6c;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #f04e4e;
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+  margin-top: 50px;
+  background-color: #222;
+  padding: 20px 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+}
+
+.footer-bottom__img img {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.footer-bottom__img img:first-child {
+  margin-left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info__left, .footer-info__right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-contact-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
